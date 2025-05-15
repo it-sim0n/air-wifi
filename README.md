@@ -1,6 +1,6 @@
 # air-wifi
 
-A Python tool for performing Wi-Fi deauthentication attacks by simply entering the SSID.  
+A Python tool for performing Wi-Fi deauthentication attacks by simply entering the BSSID and CH.  
 `air-wifi` automatically finds the target's BSSID and channel using `airodump-ng`, sets the correct channel, and launches an infinite deauth attack using `aireplay-ng`.
 
 > ⚠️ For **educational and authorized testing** only.
