@@ -8,8 +8,7 @@ a=(WHITE + r"""
     / \  (_)_ __   \ \      / (_)  ___(_)
    / _ \ | | '__|___\ \ /\ / /| | |_  | |
   / ___ \| | | |_____\ V  V / | |  _| | |
- /_/   \_\_|_|        \_/\_/  |_|_|   |_|
-                                         """)
+ /_/   \_\_|_|        \_/\_/  |_|_|   |_|""")
 
 simon=(GREEN + r"""
                _____  _____ __  __  ____  _   _ 
@@ -18,7 +17,8 @@ simon=(GREEN + r"""
                \___ \  | | | |\/| | |  | | . ` |
                ____) |_| |_| |  | | |__| | |\  |
               |_____/|_____|_|  |_|\____/|_| \_|
-              """)
+       
+       """)
 print(a+simon)
 def run_command(command):
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
@@ -34,7 +34,7 @@ def get_interfaces():
             interfaces.append(iface)
     return interfaces
 
-def select_interface(interfaces, prompt="\nSelect interface number: "):
+def select_interface(interfaces, prompt="Select interface number: "):
     for i, iface in enumerate(interfaces):
         print(f"{i}) {iface}")
     index = int(input(prompt))
