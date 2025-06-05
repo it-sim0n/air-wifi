@@ -1,5 +1,24 @@
 import subprocess
 
+
+WHITE = WHITE = '\033[97m'
+GREEN = "\033[92m"
+a=(WHITE + r""" 
+     _    _        __        ___ _____ _ 
+    / \  (_)_ __   \ \      / (_)  ___(_)
+   / _ \ | | '__|___\ \ /\ / /| | |_  | |
+  / ___ \| | | |_____\ V  V / | |  _| | |
+ /_/   \_\_|_|        \_/\_/  |_|_|   |_|
+                                         """)
+
+simon=(GREEN + r"""
+               _____  _____ __  __  ____  _   _ 
+              / ____| _   _|  \/  |/ __ \| \ | |
+              | (___   | | | \  / | |  | |  \| |
+               \___ \  | | | |\/| | |  | | . ` |
+               ____) |_| |_| |  | | |__| | |\  |
+              |_____/|_____|_|  |_|\____/|_| \_|""")
+print(a+simon)
 def run_command(command):
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
     return result.stdout.strip()
