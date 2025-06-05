@@ -17,7 +17,8 @@ simon=(GREEN + r"""
               | (___   | | | \  / | |  | |  \| |
                \___ \  | | | |\/| | |  | | . ` |
                ____) |_| |_| |  | | |__| | |\  |
-              |_____/|_____|_|  |_|\____/|_| \_|""")
+              |_____/|_____|_|  |_|\____/|_| \_|
+              """)
 print(a+simon)
 def run_command(command):
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
