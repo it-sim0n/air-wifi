@@ -33,7 +33,7 @@ def get_interfaces():
             interfaces.append(iface)
     return interfaces
 
-def select_interface(interfaces, prompt="Select interface number: "):
+def select_interface(interfaces, prompt="\nSelect interface number: "):
     for i, iface in enumerate(interfaces):
         print(f"{i}) {iface}")
     index = int(input(prompt))
