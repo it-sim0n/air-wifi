@@ -37,6 +37,6 @@ Install dependencies:
 ```bash
 sudo apt update
 sudo apt install aircrack-ng
-
+```
 #Author 
 SIMON
