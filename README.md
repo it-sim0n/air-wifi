@@ -38,5 +38,5 @@ Install dependencies:
 sudo apt update
 sudo apt install aircrack-ng
 ```
-#Author 
+# Author 
 SIMON
